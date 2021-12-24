@@ -9,7 +9,7 @@ const fetchPokemons = async () => {
 }
 
 const getPokemon = async (id) => {
-    const url = `http://localhost:8080/id/${id}`
+    const url = `https://pokedexspringrestapi.herokuapp.com/id/${id}`
     const res = await fetch(url)
     const pokemon = await res.json()
     createPokemonCard(pokemon)
